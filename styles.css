@@ -6,7 +6,7 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -14,13 +14,14 @@ body {
 }
 
 #header {
-    grid-column: span 2;
+    grid-column: span 3;
     font-size: 60px;
     text-align: center;
+    color: white;
 }
 
 nav {
-    grid-column: span 2;
+    grid-column: span 3;
     display: flex;
     align-items: center;
     background-color: rgb(236, 95, 241);
@@ -52,4 +53,44 @@ button {
     height: 25px;
     width: 50px;
     font-size: 15px;
+}
+
+.article-holder {
+    grid-column: span 2;
+    background-color: white;
+    height: inherit;
+}
+
+#header-for-article {
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 , p {
+    padding: 9px;
+}
+
+section {
+    background-color: rgb(236, 95, 241);
+}
+
+section > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+footer {
+    grid-column: span 3;
+    background-color: white;
+    padding-left: 30px;
 }
